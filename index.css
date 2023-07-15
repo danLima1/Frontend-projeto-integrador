@@ -699,7 +699,7 @@
     background-color: var(--bg-carolina-blue);
   }
   
-  .recent-post-card .card-title { margin-block: 15px 20px;}
+  .recent-post-card .card-title { margin-block: 15px 20px; }
   
   .recent-post-card .card-tag {
     gap: 15px;
