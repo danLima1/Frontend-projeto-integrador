@@ -1124,11 +1124,6 @@ main aside ul li.article:hover {
 }
 
 @media screen and (min-width: 768px) {
-
-    /************/
-    /* Conteúdo */
-    /************/
-
     #wrap>main {
         flex-direction: row;
     }
@@ -1142,46 +1137,18 @@ main aside ul li.article:hover {
 
 }
   
-  
-  
-  /*-----------------------------------*\
-    #MEDIA QUERIES
-  \*-----------------------------------*/
-  
-  /**
-   * responsive for large than 575px screen
-   */
-  
   @media (min-width: 575px) {
   
-    /**
-     * CUSTOM PROPERTY
-     */
   
     :root {
   
-      /**
-       * typography
-       */
-  
-      /* font size */
+
       --fontSize-1: 4.4rem;
       --fontSize-2: 3.5rem;
-  
-      /**
-       * spacing
-       */
   
       --section-padding: 100px;
   
     }
-  
-  
-  
-    /**
-     * REUSED STYLE
-     */
-  
     .container {
       max-width: 540px;
       width: 100%;
@@ -1189,26 +1156,12 @@ main aside ul li.article:hover {
     }
   
     .headline-3 { --fontSize-2: 2.4rem; }
-  
-  
-  
-    /**
-     * HEADER
-     */
-  
     .header .btn {
       display: block;
       margin-inline-start: auto;
     }
   
     .header.active { padding-block: 20px; }
-  
-  
-  
-    /**
-     * HERO
-     */
-  
     .hero { position: relative; }
   
     .hero .input-wrapper { max-width: 390px; }
@@ -1231,24 +1184,12 @@ main aside ul li.article:hover {
   
     .shape-2 { left: 60px; }
   
-  
-  
-    /**
-     * TOPICS
-     */
-  
     .topics .section-title { font-size: 2rem; }
   
     .slider { --slider-items: 3; }
   
     .slider-item { min-width: calc(33.33% - 13.33px); }
-  
-  
-  
-    /**
-     * FEATURE
-     */
-  
+
     .feature { position: relative; }
   
     .feature-bg {
@@ -1258,13 +1199,6 @@ main aside ul li.article:hover {
       right: 0;
       pointer-events: none;
     }
-  
-  
-  
-    /**
-     * RECENT POST
-     */
-  
     .recent-post-card {
       grid-template-columns: 0.5fr 1fr;
       gap: 20px;
@@ -1274,83 +1208,28 @@ main aside ul li.article:hover {
       width: 42px;
       height: 42px;
     }
-  
-  
-  
-    /**
-     * ASIDE
-     */
-  
+
     .aside-title { --fontSize-2: 2rem; }
   
   }
   
-  
-  
-  
-  
-  /**
-   * responsive for large than 768px screen
-   */
-  
   @media (min-width: 768px) {
-  
-    /**
-     * CUSTOM PROPERTY
-     */
-  
     :root {
-  
-      /**
-       * typography
-       */
-  
-      /* font size */
       --fontSize-1: 6.4rem;
       --fontSize-2: 4.5rem;
   
     }
-  
-  
-  
-    /**
-     * REUSED STYLE
-     */
-  
+
     .container { max-width: 720px; }
-  
-  
-  
-    /**
-     * RECENT POST
-     */
-  
+
     .recent-post-card { grid-template-columns: 0.7fr 1fr; }
   
   }
   
-  
-  
-  
-  
-  /**
-   * responsive for large than 992px screen
-   */
-  
   @media (min-width: 992px) {
-  
-    /**
-     * REUSED STYLE
-     */
-  
+
     .container { max-width: 930px; }
-  
-  
-  
-    /**
-     * HERO
-     */
-  
+
     .hero { padding-block-start: calc(var(--section-padding) + 80px); }
   
     .hero .container {
@@ -1358,24 +1237,13 @@ main aside ul li.article:hover {
       align-items: center;
     }
   
-  
-  
-    /** 
-     * TOPICS
-     */
-  
     .topic-card {
       display: grid;
       grid-template-columns: 0.3fr 1fr;
       align-items: center;
       gap: 20px;
     }
-  
-  
-  
-    /**
-     * FEATURE
-     */
+
   
     .feature-list li:nth-child(-n+2) { width: calc(50% - 15px); }
   
@@ -1383,30 +1251,12 @@ main aside ul li.article:hover {
   
     .feature-list li:nth-child(n+3) .headline-3 { --fontSize-2: 2rem; }
   
-  
-  
-    /**
-     * TAGS
-     */
-  
     .tags .grid-list { grid-template-columns: repeat(4, 1fr); }
-  
-  
-  
-    /**
-     * RECENT POST
-     */
-  
+
     .recent-post .container {
       grid-template-columns: 1fr 0.6fr;
       align-items: flex-start;
     }
-  
-  
-  
-    /**
-     * FOOTER
-     */
   
     .footer-top { grid-template-columns: repeat(3, 1fr); }
   
@@ -1419,29 +1269,11 @@ main aside ul li.article:hover {
   
   }
   
-  
-  
-  
-  
-  /**
-   * responsive for large than 1200px screen
-   */
-  
   @media (min-width: 1200px) {
-  
-    /**
-     * REUSED STYLE
-     */
   
     .container { max-width: 1140px; }
   
     body.nav-active { overflow-y: overlay; }
-  
-  
-  
-    /**
-     * HEADER
-     */
   
     .nav-open-btn,
     .navbar-top,
