@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--
+        Caminho base.
+        Define o caminho absoluto dos documentos e links do site.
+        Este camiho será alterado conforme a plataforma de hospedagem.
+    -->
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site para apresentação dos conceitos de front-end do curso de Java.">
+    <meta name="author" descrition="André Luferat &lt;andre@luferat.net&gt;">
+    <meta name="keywords" description="JavaScript, HTML5, CSS3, semântica, mobile-first, responsividade, api, rest">
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Carrega o CSS específico de cada página -->
+    <link rel="stylesheet" href="" id="pageCSS">
+
+    <link rel="shortcut icon" href="img/favicon.alfa.png">
+    <title>devSocial</title>
+</head>
+
+<body id="top">
+
+    <!-- WRAP -->
+    <div id="wrap">
+
+       
+      <header class="header" data-header>
+        <div class="container">
+    
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="119" height="37" alt="Wren logo">
+          </a>
+    
+          <nav class="navbar" data-navbar>
+    
+            <div class="navbar-top">
+              <a href="#" class="logo">
+                <img src="./assets/images/logo.svg" width="119" height="37" alt="Wren logo">
+              </a>
+    
+              <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+    
+            <ul class="navbar-list">
+    
+              <li>
+                <a href="home" class="navbar-link hover-1" data-nav-toggler>Home</a>
+              </li>
+    
+              <li>
+                <a href="contacts" class="navbar-link hover-1" data-nav-toggler>Chatbot</a>
+              </li>
+    
+              <li>
+                <a href="about" class="navbar-link hover-1" data-nav-toggler>Sobre</a>
+              </li>
+    
+              <li>
+                <a href="#recent" class="navbar-link hover-1" data-nav-toggler>Chat</a>
+              </li>
+    
+              <li>
+                <a href="#" class="navbar-link hover-1" data-nav-toggler>Contact</a>
+              </li>
+    
+            </ul>
+    
+            <div class="navbar-bottom">
+    
+              <div class="profile-card">
+                <img src="./assets/images/author-1.png" width="48" height="48" alt="Steven" class="profile-banner">
+    
+                <div>
+                  <p class="card-title">Hello Steven !</p>
+    
+                  <p class="card-subtitle">
+                    You have 3 new messages
+                  </p>
+                </div>
+              </div>
+    
+              <ul class="link-list">
+    
+                <li>
+                  <a href="#" class="navbar-bottom-link hover-1">Profile</a>
+                </li>
+    
+                <li>
+                  <a href="#" class="navbar-bottom-link hover-1">Articles Saved</a>
+                </li>
+    
+                <li>
+                  <a href="#" class="navbar-bottom-link hover-1">Add New Post</a>
+                </li>
+    
+                <li>
+                  <a href="#" class="navbar-bottom-link hover-1">My Likes</a>
+                </li>
+    
+                <li>
+                  <a href="#" class="navbar-bottom-link hover-1">Account Setting</a>
+                </li>
+    
+                <li>
+                  <a href="#" class="navbar-bottom-link hover-1">Sign Out</a>
+                </li>
+    
+              </ul>
+    
+            </div>
+    
+            <p class="copyright-text">
+              Copyright 2022 © Wren - Personal Blog Template.
+              Developed by codewithsadee
+            </p>
+    
+          </nav>
+    
+          <a href="login" class="btn btn-primary">Login</a>
+    
+          <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+    
+        </div>
+      </header>
+    
+    
+            
+
+        <!-- Conteúdo principal -->
+        <main></main>
+
+        <!-- Rodapé -->
+        <div class="footer-bottom">
+
+            <p class="copyright">
+              &copy; Desenvolvido por <a href="#" class="copyright-link">Daniel e Jaydee.</a>
+            </p>
+  
+            <ul class="social-list">
+  
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+  
+                  <span class="span">Twitter</span>
+                </a>
+              </li>
+  
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+  
+                  <span class="span">LinkedIn</span>
+                </a>
+              </li>
+  
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+  
+                  <span class="span">Instagram</span>
+                </a>
+              </li>
+  
+            </ul>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+    </footer>
+
+        <hr class="nbsp">
+
+    </div>
+    <!-- Fim do WRAP -->
+
+    <div id="aboutCookies">
+        <div class="cookie-modal">
+            <div class="cookie-body">
+                <div class="cookie-content">Nosso site usa
+                    <a href="https://pt.wikipedia.org/wiki/Cookie_(inform%C3%A1tica)" target="_blank">
+                        <strong>Cookies</strong>
+                    </a> para melhorar sua experiência de navegação.
+                </div>
+                <form class="cookie-buttons">
+                    <button type="button" id="policies">Políticas de Privacidade</button>
+                    <button type="button" id="accept">Aceito todos os cookies</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carga do JavaScript -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script defer src="fb.js"></script>
+    <script defer src="index.js"></script>
+
+</body>
+
+</html>

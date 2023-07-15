@@ -1,0 +1,161 @@
+/* Folhas de estilo de home. */
+
+.card span{
+display: flex;
+left: 70px;
+cursor: pointer;
+}
+.card ul{
+  cursor: pointer;
+}
+.art-item {
+    background-color: rgb(220, 220, 220);
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.aside-card p{
+  padding-bottom: 10px;
+  color: rgb(27, 142, 196);
+  font-size: 20px;
+  font-family:sans-serif
+}
+.art-item:hover {
+    background-color: rgb(183, 183, 183);
+}
+
+.art-item img {
+    border-radius: .5rem .5rem 0 0;
+    width: 100%;
+}
+
+.art-item h3 {
+    margin: 0;
+    padding: .25rem 1rem;
+}
+
+.art-item p {
+    margin: 0;
+    padding: 1rem;
+}
+.aside-card {
+  display: inline-block;
+  width: 200px;
+  margin-right: 5px;
+  background-color: var(--bg-oxford-blue);
+  border: 1px solid var(--border-prussian-blue);
+  padding: 10px;
+}
+
+.aside-card {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.article {
+  display: inline-block;
+  width: 200px;
+  margin-right: 5px;
+  border: 1px solid rgb(14, 70, 116);
+  border-radius: 19px;
+  padding: 10px;
+}
+
+.article  {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+  
+
+  .footer {
+    padding-inline: 20px;
+    border-radius: var(--radius-48);
+    color: var(--text-wild-blue-yonder);
+    margin-block-end: 24px;
+  }
+  
+  .footer-top {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .footer-brand .footer-text { font-size: var(--fontSize-6); }
+  
+  .footer-text:not(.address) { margin-block: 20px; }
+  
+  .footer-brand .footer-list-title { margin-block-end: 2px; }
+  
+  .footer-list-title {
+    color: var(--text-columbia-blue);
+    font-size: var(--fontSize-3);
+    margin-block-end: 30px;
+  }
+  
+  .footer-list ul { columns: 2; }
+  
+  .footer-link { margin-block-end: 12px; }
+  
+  .footer .input-wrapper {
+    position: relative;
+    margin-block-end: 24px;
+  }
+  
+  .footer .input-field {
+    padding: 12px;
+    padding-inline-start: 20px;
+    border-block-end: 1px solid var(--text-wild-blue-yonder);
+    font-size: var(--fontSize-6);
+  }
+  
+  .footer .input-field::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.5;
+  }
+  
+  .footer .input-wrapper ion-icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    --ionicon-stroke-width: 40px;
+  }
+  
+  .footer-bottom {
+    border-block-start: 1px solid var(--border-prussian-blue);
+    padding-block: 50px;}
+  
+
+@media screen and (min-width: 575px) {
+
+    #artList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .art-item {
+        width: 48%;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+
+    .art-item {
+        width: 100%;
+        display: flex;
+    }
+
+    .art-item img {
+        width: 100px;
+        height: auto;
+        border-radius: .5rem 0 0 .5rem;
+    }
+
+    .art-item h3 {
+        padding: .5rem 1rem 0 1rem;
+    }
+    
+}
