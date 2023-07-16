@@ -1,11 +1,7 @@
 
-$(document).ready(myContacts)
-function myContacts() {
+changeTitle('Faça contato')
+const apiKey = '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'
 
-    changeTitle('Faça contato')
-
-}
-const apiKey = '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'
 
 function sendMessage(){
     var message = document.getElementById('message-input')
