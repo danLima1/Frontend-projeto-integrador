@@ -1,14 +1,6 @@
-/**
- * FrontEndeiros 1.0
- * /index.js - Aplicativo principal
- * By Luferat
- * MIT License 2023 
- **/
 
-// Configuração do ambiente.
 const app = {
-    siteName: 'FrontEndeiros',
-    siteSlogan: 'Programando para o futuro',
+    siteName: 'devSocial',
     apiBaseURL: 'http://localhost:8080/'
 }
 

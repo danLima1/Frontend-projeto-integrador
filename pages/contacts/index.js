@@ -1,7 +1,11 @@
 
-changeTitle('Faça contato')
-const apiKey = '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'
+$(document).ready(myContacts)
+function myContacts() {
 
+    changeTitle('Faça contato')
+
+}
+const apiKey = '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'
 
 function sendMessage(){
     var message = document.getElementById('message-input')
@@ -21,7 +25,7 @@ function sendMessage(){
     btnSubmit.style.cursor = 'not-allowed'
     message.disabled = true
 
-    fetch("https://api.openai.com/v1/completions",{
+    fetch("https://api.openai.com/v1/chat/completion",{
         method: 'POST',
         headers: {
             Accept: "application/json",
