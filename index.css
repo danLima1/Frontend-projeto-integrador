@@ -1271,6 +1271,10 @@ main aside ul li.article:hover {
   
   @media (min-width: 1200px) {
   
+    /**
+     * REUSED STYLE
+     */
+  
     .container { max-width: 1140px; }
   
     body.nav-active { overflow-y: overlay; }
