@@ -5,7 +5,6 @@ function myContacts() {
     changeTitle('Faça contato')
 
 }
-const apiKey = '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'
 
 function sendMessage(){
     var message = document.getElementById('message-input')
@@ -25,12 +24,12 @@ function sendMessage(){
     btnSubmit.style.cursor = 'not-allowed'
     message.disabled = true
 
-    fetch("https://api.openai.com/v1/chat/completion",{
+    fetch("https://api.openai.com/v1/completions",{
         method: 'POST',
         headers: {
             Accept: "application/json",
             "Content-Type": "application/json",
-            Authorization: `Bearer ${apiKey}`,
+            Authorization: `Bearer ${app.apiKey}`,
         },
         body: JSON.stringify({
             model: "text-davinci-003",

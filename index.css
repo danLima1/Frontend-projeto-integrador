@@ -815,6 +815,7 @@
   \*-----------------------------------*/
   
   .footer {
+    text-decoration: dotted white;
     padding-inline: 20px;
     border-radius: var(--radius-48);
     color: var(--text-wild-blue-yonder);
@@ -902,11 +903,7 @@
     transform: translateY(-2px);
   }
   
-  
-  
-  
-  
-  
+ 
   
   .back-top-btn {
     position: fixed;

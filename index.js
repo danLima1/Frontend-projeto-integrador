@@ -1,7 +1,8 @@
 
 const app = {
     siteName: 'devSocial',
-    apiBaseURL: 'http://localhost:8080/'
+    apiBaseURL: 'http://localhost:8080/',
+    apiKey: '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'
 }
 
 // Chama aplicativo principal.
@@ -9,7 +10,6 @@ $(document).ready(myApp)
 
 // Aplicativo principal.
 function myApp() {
-
     // Aceite de cookies.
     if (cookie.get('acceptCookies') == 'on')
         $('#aboutCookies').hide()
@@ -128,7 +128,7 @@ function loadpage(page, updateURL = true) {
 // Muda o título da página → <title></title>
 function changeTitle(title = '') {
     let pageTitle = app.siteName + ' - '
-    if (title == '') pageTitle += app.siteSlogan
+    if (title == '') pageTitle
     else pageTitle += title
     $('title').html(pageTitle)
 }

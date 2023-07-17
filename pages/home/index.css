@@ -8,18 +8,21 @@ cursor: pointer;
 .card ul{
   cursor: pointer;
 }
-.art-item {
-    background-color: rgb(220, 220, 220);
-    border-radius: .5rem;
-    margin-bottom: 1rem;
-    cursor: pointer;
-}
+ 
+
 .aside-card p{
   padding-bottom: 10px;
   color: rgb(27, 142, 196);
   font-size: 20px;
   font-family:sans-serif
 }
+
+.art-item {
+  background-color: rgb(220, 220, 220);
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+} 
 .art-item:hover {
     background-color: rgb(183, 183, 183);
 }

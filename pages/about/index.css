@@ -1,1 +1,10 @@
 /**/
+body{
+    padding-top: 100px;
+}
+.art-item {
+    background-color: rgb(220, 220, 220);
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  } 
