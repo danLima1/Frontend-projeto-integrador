@@ -33,6 +33,19 @@ function searchMessage() {
             }
         })
 }
+let contMnLida = ' ';
+function messageNlidas(uId, contat) {
+    $.get(app.apiBaseURL + 'mensagens/' + uId + '/' + contat + '/nlidas')
+        .done((data) => {
+                                    contMnLida += `
+                    <button type="button" class="tab-head-single" data-id="1">
+                    <span class="message__count">${data.length}</span>
+                    <img src="img/server1.jpg" alt="server" />
+                  </button>                   
+        `                
+                $('.app-body-tabs-head').html(contMnLida)
+        })
+}
 const form = document.querySelector("form")
 const chatMessages = document.querySelector(".chat__messages")
 const input = document.querySelector(".sendMessage")
