@@ -1,11 +1,12 @@
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDlwbotbd_Wn8EsYa3w9HJt1R8Jjg4dqLw",
-    authDomain: "frontendeiros-jayd.firebaseapp.com",
-    projectId: "frontendeiros-jayd",
-    storageBucket: "frontendeiros-jayd.appspot.com",
-    messagingSenderId: "829641295649",
-    appId: "1:829641295649:web:4211a50b7d80faca772060"
+    apiKey: "AIzaSyAX2bYwaZsNYc9VKG9kimBCoQboAmmWGk8",
+    authDomain: "frontendeirosss.firebaseapp.com",
+    projectId: "frontendeirosss",
+    storageBucket: "frontendeirosss.appspot.com",
+    messagingSenderId: "1057465817692",
+    appId: "1:1057465817692:web:ec56a5970171db78416499",
+    measurementId: "G-PGNCJRE2ER"
 };
 
 // Incializa o Firebase

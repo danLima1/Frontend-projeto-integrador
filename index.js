@@ -45,8 +45,8 @@ function myApp() {
 
 // Login do Firebase Authenticator.
 function fbLogin() {
-    // firebase.auth().signInWithPopup(provider)
-    firebase.auth().signInWithRedirect(provider)
+    // 
+    firebase.auth().signInWithPopup(provider)
         .then((user) => {
             popUp({ type: 'success', text: `Olá ${user.user.displayName}!` })
             loadpage(location.pathname.split('/')[1])
