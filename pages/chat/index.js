@@ -4,12 +4,34 @@
  * By Luferat
  * MIT License 2023 
  **/
-
+let mens;
 $(document).ready(myChat)
 
 function myChat() {
-console.log("chat on");
-        
+    console.log("chat on");
+
+
+
+}
+let buscaDeMens = " "
+function searchMessage() {
+    let mens = $('#qqcoisa').val();
+    $.get(app.apiBaseURL + 'mensagens/find?q=' + mens)
+        .done((data) => {
+            console.log(data)
+            if (data.length > 0) {
+                data.forEach((art) => {
+                     buscaDeMens += `
+            <div class="menssage__info p" data-id="${art.mensId}">
+<h4> Contato ${art.mensUserIdContato} => </h4> <h6>Mensagem: ${art.mensMensagem}</h6>
+            </div>                    
+        `
+                })
+                $('.message__info').html(buscaDeMens)
+            } else {
+                $('.message__info').html("nenhuma mensagem encontrada.")
+            }
+        })
 }
 const form = document.querySelector("form")
 const chatMessages = document.querySelector(".chat__messages")
@@ -60,7 +82,7 @@ form.addEventListener("submit", sendMessage)
 function sendMessage(e) {
     e.preventDefault()
 
-    if(input.value !== "") {
+    if (input.value !== "") {
         var messageDiv = document.createElement("div")
         messageDiv.className = "message"
 

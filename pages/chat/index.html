@@ -1,95 +1,92 @@
 <article>
-    <div class="outra">
-        <div class="outra__top">
-          <input type="text" placeholder="Adicione um contato" />
+  <div class="outra">
+    <div class="outra__top">
+      <input type="text" placeholder="Adicione um contato" />
+    </div>
+    <div class="outra__icon">
+      <i class="fas fa-user-friends fa-lg"></i>
+      <span>Contatos</span>
+    </div>
+    <div class="outra__icon">
+      <i class="fas fa-compact-disc fa-lg"></i>
+      <span></span>
+    </div>
+    <div class="outra__users">
+      <div class="outra__usersHeader">
+        <div class="outra__header">
+          <h4>Mensagens</h4>
         </div>
-        <div class="outra__icon">
-          <i class="fas fa-user-friends fa-lg"></i>
-          <span>Contatos</span>
-          
-        </div>
-        <div class="outra__icon">
-          <i class="fas fa-compact-disc fa-lg"></i>
-          <span></span>
-        </div>
-        <div class="outra__users">
-          <div class="outra__usersHeader">
-            <div class="outra__header">
-              <h4>Mensagens</h4>
-            </div>
-            <i class="fas fa-envelope outra__addUser"></i>
-          </div>
-          <div>
-            <div class="app-body-tabs-head">
-              <button type = "button" class = "tab-head-single" data-id = "1">
-                <span class="message__count">8</span>
-                <img src="img/server1.jpg" alt="server" />
-              </button>
-              <button type = "button" class = "tab-head-single" data-id = "2">
-                <span class="message__count">50</span>
-                <img src="img/server2.jpg" alt="server" />
-              </button>
-              <button type = "button" class = "tab-head-single" data-id = "1">
-                <span class="message__count">120</span>
-                <img src="img/server3.jpg" alt="server" />
-              </button>
-              <button type = "button" class = "tab-head-single" data-id = "1">
-                <span class="message__count">20</span>
-                <img src="img/server4.jpg" alt="server" />
-              </button>
-              <button type = "button" class = "tab-head-single" data-id = "1">
-                <span class="message__count">25</span>
-                <img src="img/server5.jpg" alt="server" />
-              </button>
-            </div>
-          
-        
-          </div>
+        <i class="fas fa-envelope outra__addUser"></i>
+      </div>
+      <div>
+        <div class="app-body-tabs-head">
+          <button type="button" class="tab-head-single" data-id="1">
+            <span class="message__count">8</span>
+            <img src="img/server1.jpg" alt="server" />
+          </button>
+          <button type="button" class="tab-head-single" data-id="2">
+            <span class="message__count">50</span>
+            <img src="img/server2.jpg" alt="server" />
+          </button>
+          <button type="button" class="tab-head-single" data-id="1">
+            <span class="message__count">120</span>
+            <img src="img/server3.jpg" alt="server" />
+          </button>
+          <button type="button" class="tab-head-single" data-id="1">
+            <span class="message__count">20</span>
+            <img src="img/server4.jpg" alt="server" />
+          </button>
+          <button type="button" class="tab-head-single" data-id="1">
+            <span class="message__count">25</span>
+            <img src="img/server5.jpg" alt="server" />
+          </button>
         </div>
       </div>
-    
-    
-      <div class="chat">
-        <div>
-          <div class="chatHeader">
-            <div class="chatHeader__left">
-              <span class="chatHeader__Dm">@</span>
-              <h3>Edinaldo</h3>
-            </div>
-            <div class="chatHeader__right">
-              <i class="fas fa-phone-volume fa-lg"></i>
-              <i class="fas fa-video fa-lg"></i>
-              <i class="fas fa-user-plus fa-lg"></i>
-    
-              <div class="search">
-                <input type="text" placeholder="Pesquise" />
-                <i class="fas fa-search fa-lg"></i>
-              </div>
-              <a href="treco/info.html"><i class="fas fa-question-circle fa-lg"></i></a>
-            </div>
-          </div>
+    </div>
+  </div>
+
+  <div class="chat">
+    <div>
+      <div class="chatHeader">
+        <div class="chatHeader__left">
+          <span class="chatHeader__Dm">@</span>
+          <h3>Edinaldo</h3>
         </div>
-        <div class="chat__messages">
-          <div class="message">
-            <img src="img/user3.jpg" alt="avatar">
-            <div class="message__info">
-              <h4>Edinaldo <span class="message__timestamp">04/28/2022</span></h4>
-              <p>oi</p>
-            </div>
-          </div>
-        </div>
-    
-        <div class="chat__input">
-          <i class="fas fa-plus-circle fa-lg"></i>
-          <form>
-            <input class="sendMessage" type="text">
-            <button class="chat__inputButton" type="submit">Enviar</button>
+        <div class="chatHeader__right">
+          <i class="fas fa-phone-volume fa-lg"></i>
+          <i class="fas fa-video fa-lg"></i>
+          <i class="fas fa-user-plus fa-lg"></i>
+
+          <form id="mens" class="search">
+            <input type="text" placeholder="Pesquise" id="qqcoisa" />
+            <button
+              class="fas fa-search fa-lg" onclick="searchMessage();"
+            ></button>
           </form>
-          <div class="chat__inputIcons">
-            <i class="fas fa-gift fa-lg"></i>
-            <i class="fas fa-file-image fa-lg"></i>
-            <i class="fas fa-laugh fa-lg"></i>
-          </div>
         </div>
       </div>
+    </div>
+    <div class="chat__messages">
+      <div class="message">
+        <img src="img/user3.jpg" alt="avatar" />
+        <div class="message__info">
+          <h4>Edinaldo <span class="message__timestamp">04/28/2022</span></h4>
+          <p>oi</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="chat__input">
+      <i class="fas fa-plus-circle fa-lg"></i>
+      <form>
+        <input class="sendMessage" type="text" />
+        <button class="chat__inputButton" type="submit">Enviar</button>
+      </form>
+      <div class="chat__inputIcons">
+        <i class="fas fa-gift fa-lg"></i>
+        <i class="fas fa-file-image fa-lg"></i>
+        <i class="fas fa-laugh fa-lg"></i>
+      </div>
+    </div>
+  </div>
 </article>

@@ -2,7 +2,7 @@
 const app = {
     siteName: 'devSocial',
     apiBaseURL: 'http://localhost:8080/',
-    apiKey: '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'
+    apiKey: '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'
 }
 
 // Chama aplicativo principal.

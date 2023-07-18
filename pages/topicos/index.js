@@ -13,7 +13,7 @@ function myTopico() {
 
     var articleList = '';
 
-    $.get(app.apiBaseURL + 'topicos')
+    $.get(app.apiBaseURL + 'articles/find?q=')
         .done((data) => {
             if (data.length > 0) {
                 data.forEach((art) => {
