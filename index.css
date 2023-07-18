@@ -176,7 +176,7 @@
   \*-----------------------------------*/
   
   .container { padding-inline: 16px; }
-  
+
   .hover-1,
   .hover-2 { transition: var(--transition-1); }
   
@@ -1135,6 +1135,7 @@ main aside ul li.article:hover {
         margin-top: 0;
         max-width: 220px;
         min-width: 220px;
+
     }
 
 }
