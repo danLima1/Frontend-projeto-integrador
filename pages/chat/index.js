@@ -10,7 +10,7 @@ $(document).ready(myChat)
 function myChat() {
     console.log("chat on");
 
-
+    messageNlidas(1, 2);
 
 }
 let buscaDeMens = " "
@@ -38,12 +38,43 @@ function messageNlidas(uId, contat) {
     $.get(app.apiBaseURL + 'mensagens/' + uId + '/' + contat + '/nlidas')
         .done((data) => {
                                     contMnLida += `
-                    <button type="button" class="tab-head-single" data-id="1">
+                    <button type="button"  class="tab-head-single" data-id="1" onclick="nomeConta(${contat})");>
                     <span class="message__count">${data.length}</span>
                     <img src="img/server1.jpg" alt="server" />
                   </button>                   
         `                
                 $('.app-body-tabs-head').html(contMnLida)
+        })
+}
+
+let nomeContat = ' ';
+function nomeConta(uId) {
+   
+    $.get(app.apiBaseURL + 'usuarios/' + uId + '/one')
+        .done((data) => {
+            console.log(data)
+            nomeContat += ` ${data.user_Nome}                  
+        `                
+                $('.nomeCont').html(contMnLida)
+        })
+}
+let mensagensTotais = " "
+function MessageConversa(uId, contat) {
+    $.get(app.apiBaseURL + 'mensagens/' + uId + '/' + contat)
+        .done((data) => {
+            console.log(data)
+            if (data.length > 0) {
+                data.forEach((art) => {
+                    mensagensTotais += `
+            <div class="menssage__info p" data-id="${art.mensId}">
+<h4> Contato ${art.mensUserIdContato} => </h4> <h6>Mensagem: ${art.mensMensagem}</h6>
+            </div>                    
+        `
+                })
+                $('.message__info').html(mensagensTotais)
+            } else {
+                $('.message__info').html("nenhuma mensagem encontrada.")
+            }
         })
 }
 const form = document.querySelector("form")
