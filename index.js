@@ -18,11 +18,11 @@ function myApp() {
     // Monitor de usuário logado.
     firebase.auth().onAuthStateChanged((user) => {
         if (user) {
-            $('#navUser').html(`<img src="${user.photoURL}" alt="${user.displayName}" referrerpolicy="no-referrer"><span>Perfil</span>`)
-            $('#navUser').attr('href', 'profile')
+            $('.btn-primary').html(`<img src="${user.photoURL}" alt="${user.displayName}" referrerpolicy="no-referrer"><span>Perfil</span>`)
+            $('.btn-primary').attr('href', 'profile')
         } else {
-            $('#navUser').html(`<i class="fa-solid fa-user fa-fw"></i><span>Login</span>`)
-            $('#navUser').attr('href', 'login')
+            $('btn-primary').html(`<i class="fa-solid fa-user fa-fw"></i><span>Login</span>`)
+            $('. btn-primary').attr('href', 'login')
         }
     });
 
