@@ -1,7 +1,7 @@
 
 const app = {
     siteName: 'devSocial',
-    apiBaseURL: 'https://8b309bd0-e357-4099-baf6-bf617e56e274-00-2ooesl22k1x5n.picard.replit.dev/'
+    apiBaseURL: 'http://localhost:8080/'
 }
 
 // Chama aplicativo principal.
